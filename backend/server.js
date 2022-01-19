@@ -1,15 +1,36 @@
-import express from 'express'
-import cors from 'cors'
-import mongoose from 'mongoose'
+import express from "express"
+import cors from "cors"
+import mongoose from "mongoose"
 
 const mongoUrl = process.env.MONGO_URL || "mongodb://127.0.0.1/finalproject"
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
 mongoose.Promise = Promise
 
-// Defines the port the app will run on. Defaults to 8080, but can be 
-// overridden when starting the server. For example:
-//
-//   PORT=9000 npm start
+const userSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+    trim: true
+  },
+  email: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  password: {
+    type: String,
+    required: true,
+    minLength: 8,
+    trim: true,
+  },
+  accessToken: {
+    type: String,
+    required: true
+  },
+})
+
+const User = mongoose.model('User', userSchema)
+
 const port = process.env.PORT || 8080
 const app = express()
 
