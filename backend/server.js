@@ -25,10 +25,12 @@ const userSchema = new mongoose.Schema({
   },
   accessToken: {
     type: String,
-    required: true
+    required: true,
+    default: () => crypto.randomBytes(128).toString('hex'),
   },
 })
 
+// User model 
 const User = mongoose.model('User', userSchema)
 
 const port = process.env.PORT || 8080
@@ -39,8 +41,40 @@ app.use(cors())
 app.use(express.json())
 
 // Start defining your routes here
-app.get('/', (req, res) => {
-  res.send('Hello world')
+app.get('/'), (req, res) => {
+  res.send('Welcome to JKR')
+}
+
+app.get('/my-pages', (req, res) => {
+  res.send('Welcome')
+})
+
+app.post('/signup', async (req, res) => {
+  const { email, password } = req.body
+
+  try {
+    const salt = bcrypt.genSaltSync()
+
+    if (password.length < 8) {
+			throw 'Password must be at least 8 characters long';
+    }
+
+    const newUser = await new User({
+      email,
+      password: bcrypt.hashSync(password, salt),
+    }).save()
+
+    res.status(201).json({
+      response: {
+        userId: newUser._id,
+        email: newUser.email,
+        accessToken: newUser.accessToken
+      },
+      success: true,
+    })
+  } catch (error) {
+    res.status(400).json({ response: error, success: false})
+  }
 })
 
 // Start the server
