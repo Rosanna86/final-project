@@ -64,8 +64,10 @@ app.get('/'), (req, res) => {
   res.send('Welcome to JKR')
 }
 
+app.get('/my-pages', authenticateUser)
 app.get('/my-pages', (req, res) => {
-  res.send('Welcome')
+  const { name } = req.body
+  res.send(`Welcome ${name}`)
 })
 
 
@@ -115,7 +117,7 @@ app.post('/signin', async (req, res) => {
 			})
 		} else {
 			res.status(404).json({
-				response: "Email or password doesn't match!",
+				response: "Invalid e-mail or password",
 				success: false,
 			})
 		}
