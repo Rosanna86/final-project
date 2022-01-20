@@ -1,5 +1,5 @@
 {
-  "name": "project-auth-backend",
+  "name": "project-final-project",
   "version": "1.0.0",
   "description": "Starter project to get up and running with express quickly",
   "scripts": {
@@ -16,7 +16,9 @@
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
+    "dotenv": "^14.2.0",
     "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.14",
     "nodemon": "^2.0.2"
   },
