@@ -28,12 +28,25 @@ const userSchema = new mongoose.Schema({
   accessToken: {
     type: String,
     required: true,
-    default: () => crypto.randomBytes(128).toString('hex'),
+    default: () => crypto.randomBytes(128).toString("hex"),
   },
 })
 
 // User model 
-const User = mongoose.model('User', userSchema)
+const User = mongoose.model("User", userSchema)
+
+//Product model
+
+const Product = mongoose.model("Product", {
+  productId: Number,
+  productName: String,
+  desc: String,
+  condition: String,
+  category: String,
+  size: String,
+  price: Number,
+  img: String
+})
 
 const port = process.env.PORT || 8080
 const app = express()
@@ -43,7 +56,7 @@ app.use(cors())
 app.use(express.json())
 
 const authenticateUser = async (req, res, next) => { 
-	const accessToken = req.header('Authorization')
+	const accessToken = req.header("Authorization")
 
 	try {
 		const user = await User.findOne({ accessToken })
@@ -51,7 +64,7 @@ const authenticateUser = async (req, res, next) => {
       req.user = user
 			next()
 		} else {
-			res.status(401).json({ response: 'Please, log in', success: false })
+			res.status(401).json({ response: 'Please log in', success: false })
 		}
 	} catch (error) {
 		res.status(400).json({ response: error, success: false })
@@ -60,18 +73,29 @@ const authenticateUser = async (req, res, next) => {
 
 // ROUTES
 
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
   res.send('Welcome to JKR')
 })
 
-app.get('/my-pages', authenticateUser)
-app.get('/my-pages', (req, res) => {
+app.get("/products", async (req, res) => {
+
+  try {
+    const products = await Product.find()
+    res.json({products, success: true})
+  } catch (error) {
+    res.status(400).json({ response: error, success: false})
+  }
+})
+
+
+app.get("/my-pages", authenticateUser)
+app.get("/my-pages", (req, res) => {
   const { name } = req.body
   res.send(`Welcome ${name}`)
 })
 
 
-app.post('/signup', async (req, res) => {
+app.post("/signup", async (req, res) => {
   const { name, email, password } = req.body
 
   try {
@@ -100,7 +124,7 @@ app.post('/signup', async (req, res) => {
   }
 })
 
-app.post('/signin', async (req, res) => {
+app.post("/signin", async (req, res) => {
 	const { email, password } = req.body
 
 	try {
