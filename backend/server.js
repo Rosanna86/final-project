@@ -60,9 +60,9 @@ const authenticateUser = async (req, res, next) => {
 
 // ROUTES
 
-app.get('/'), (req, res) => {
+app.get('/', (req, res) => {
   res.send('Welcome to JKR')
-}
+})
 
 app.get('/my-pages', authenticateUser)
 app.get('/my-pages', (req, res) => {
