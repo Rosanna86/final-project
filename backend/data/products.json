@@ -1,0 +1,252 @@
+[
+  {
+    "productId": 1,
+    "productName": "Red Stripe Overall",
+    "desc": "Baby overall for ultimate comfort with snaps at the inseam for easy changing.",
+    "condition": "Very good condition",
+    "category": "One piece",
+    "size": "6-12M",
+    "price": 6,
+    "img": "https://example.com/directory/filename.png"
+  },
+  {
+    "productId": 2,
+    "productName": "Teddy Winter Suite",
+    "desc": "Comfy and warm teddy suite, zips from ankle to chin.",
+    "condition": "Excellent",
+    "category": "Outerwear",
+    "size": "0-3M",
+    "price": 10,
+    "img": ""
+  },
+  {
+    "productId": 3,
+    "productName": "Bottom Up Shirt",
+    "desc": "Vintage colored shirt with fun Snoopy repeat pattern.",
+    "condition": "Excellent condition",
+    "category": "Tops",
+    "size": "3T",
+    "price": 12,
+    "img": ""
+  },
+  {
+    "productId": 4,
+    "productName": "Retro Embroided Denim Overalls",
+    "desc": "Classic denim overall with adjustable straps.",
+    "condition": "Very good condition",
+    "category": "One piece",
+    "size": "12-18M",
+    "price": 10,
+    "img": ""
+  },
+  {
+    "productId": 5,
+    "productName": "Shell Jacket",
+    "desc": "Colorful water and wind-resistans pull over shell jacket.",
+    "condition": "Excellent condition",
+    "category": "Outerwear",
+    "size": "3T",
+    "price": 13,
+    "img": ""
+  },
+  {
+    "productId": 6,
+    "productName": "Summer Shoe",
+    "desc": "Blue-gray shoes with a subtle sparkle.",
+    "condition": "Excellent condition",
+    "category": "Footwear",
+    "size": "2T",
+    "price": 10,
+    "img": ""
+  },
+  {
+    "productId": 7,
+    "productName": "Green Harem Pants",
+    "desc": "Comfy, easy pull on style pants with big pockets and drawcord detail.",
+    "condition": "Very good condition",
+    "category": "Bottoms",
+    "size": "6-12M",
+    "price": 7,
+    "img": ""
+  },
+  {
+    "productId": 8,
+    "productName": "Sun Hat",
+    "desc": "Light pink sun hat with snaps back for adjustment.",
+    "condition": "Good condition",
+    "category": "Outerwear",
+    "size": "2T",
+    "price": 4,
+    "img": ""
+  },
+  {
+    "productId": 9,
+    "productName": "Short Sleeve Top",
+    "desc": "Soft and comfy organic cotton top with a navy elephant print.",
+    "condition": "Very good condition",
+    "category": "Tops",
+    "size": "12-18M",
+    "price": 6,
+    "img": ""
+  },
+  {
+    "productId": 10,
+    "productName": "Navy Shoe",
+    "desc": "Sporty shoes with straps for a customize fit.",
+    "condition": "Excellent condition",
+    "category": "Footwear",
+    "size": "12-18M",
+    "price": 10,
+    "img": ""
+  },
+  {
+    "productId": 11,
+    "productName": "Caramel Joggers",
+    "desc": "Super soft sweatpants with elastic waistband.",
+    "condition": "Excellent condition",
+    "category": "Bottoms",
+    "size": "2T",
+    "price": 5,
+    "img": ""
+  },
+  {
+    "productId": 12,
+    "productName": "Dove Leather Shoe",
+    "desc": "The ideal first walking shoes for growing feet.",
+    "condition": "Very good condition",
+    "category": "Footwear",
+    "size": "6-12M",
+    "price": 9,
+    "img": ""
+  },
+  {
+    "productId": 13,
+    "productName": "Baby Chambray Romper",
+    "desc": "Fun blue romper, crafted in soft cotton with an easy-on design.",
+    "condition": "Very good condition",
+    "category": "One piece",
+    "size": "3-6M",
+    "price": 8,
+    "img": ""
+  },
+  {
+    "productId": 14,
+    "productName": "Jersey Joggers",
+    "desc": "Super comfy leopard print joggers.",
+    "condition": "Very good condition",
+    "category": "Bottoms",
+    "size": "3T",
+    "price": 7,
+    "img": ""
+  },
+  {
+    "productId": 15,
+    "productName": "Baby jogger pants",
+    "desc": "Soft and stretchy, made with organic cotton.",
+    "condition": "Good condition",
+    "category": "Bottoms",
+    "size": "0-3M",
+    "price": 5,
+    "img": ""
+  },
+  {
+    "productId": 16,
+    "productName": "Cub Ski Suit",
+    "desc": "Yellow ski suit with removable helmet friendly hood.",
+    "condition": "Very good condition",
+    "category": "Outerwear",
+    "size": "3T",
+    "price": 25,
+    "img": ""
+  },
+  {
+    "productId": 17,
+    "productName": "Cuddly Cow Playsuit",
+    "desc": "Super soft one piece. Perfect for playtime, tummy time or anytime.",
+    "condition": "Good condition",
+    "category": "One piece",
+    "size": "0-3M",
+    "price": 6,
+    "img": ""
+  },
+  {
+    "productId": 18,
+    "productName": "T-shirt Bear",
+    "desc": "Long sleeved t-shirt in soft cotton with bear front print.",
+    "condition": "Very good condition",
+    "category": "Tops",
+    "size": "3-6M",
+    "price": 7,
+    "img": ""
+  },
+  {
+    "productId": 19,
+    "productName": "Cotton Shorts",
+    "desc": "Stylish and playful organic cotton shorts.",
+    "condition": "Very good condition",
+    "category": "Bottoms",
+    "size": "6-12M",
+    "price": 5,
+    "img": ""
+  },
+  {
+    "productId": 20,
+    "productName": "Short Sleeve Bodysuit",
+    "desc": "Sweet bodysuit with easy-over-the-head shoulders and snaps at the legs.",
+    "condition": "Excellent condition",
+    "category": "One piece",
+    "size": "0-3M",
+    "price": 6,
+    "img": ""
+  },
+  {
+    "productId": 21,
+    "productName": "Quilted Jacket",
+    "desc": "Fun and functional quilted jacket with dino print at interior.",
+    "condition": "Excellent condition",
+    "category": "Outerwear",
+    "size": "2T",
+    "price": 16,
+    "img": ""
+  },
+  {
+    "productId": 22,
+    "productName": "Furry Lined Baby Shoe",
+    "desc": "Warm and comfy boot-style shoes with velcro strap.",
+    "condition": "Very good condition",
+    "category": "Footwear",
+    "size": "0-3M",
+    "price": 8,
+    "img": ""
+  },
+  {
+    "productId": 23,
+    "productName": "Indigo Blue Sweater",
+    "desc": "Breathable yet insulating sweater with a beach cove motif.",
+    "condition": "Good condition",
+    "category": "Tops",
+    "size": "3T",
+    "price": 9,
+    "img": ""
+  },
+  {
+    "productId": 24,
+    "productName": "Knit Cardigan",
+    "desc": "Knitted cardigan in soft merino wool with round neck and buttons down the front.",
+    "condition": "Very good condition",
+    "category": "Tops",
+    "size": "12-18M",
+    "price": 16,
+    "img": ""
+  },
+  {
+    "productId": 25,
+    "productName": "Truck Rain Boot",
+    "desc": "Fun printed rain boots for heavy duty play.",
+    "condition": "Good condition",
+    "category": "Footwear",
+    "size": "2T",
+    "price": 9,
+    "img": ""
+  }
+]
