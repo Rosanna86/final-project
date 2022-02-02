@@ -25,6 +25,7 @@ const Footer = () => {
         paddingTop: '40px',
         paddingBottom: '20px',
         justifyContent: 'space-evenly',
+        textAlign: 'center',
         textTransform: 'uppercase',
         fontWeight: 'normal',
         padding: '10px, 0',
@@ -74,7 +75,7 @@ const Footer = () => {
         alignItems: 'center',
         padding: '10px, 0',
         }}>
-          <Typography variant="subtitle1">
+          <Typography variant="subtitle2">
             This is a fictional webshop made by students at Technigo Bootcamp
           </Typography>
       </Box>
