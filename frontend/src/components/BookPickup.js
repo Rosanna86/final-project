@@ -26,7 +26,7 @@ const BookPickup = () => {
         maxDate={addMonths(new Date(), 1)}
         showDisabledMonthNavigation
       />
-      <PickupModal />
+      <PickupModal formattedDate = {formattedDate}/>
       {/* <button onClick = {() => setShowModal(true)}>Confirm</button>
       {showModal && <Modal setShowModal={setShowModal} />}
       <p>{JSON.stringify(formattedDate)}</p> */}

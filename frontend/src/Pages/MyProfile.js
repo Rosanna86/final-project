@@ -101,7 +101,7 @@ const MyProfile = () => {
 				
 				</Container>
 					<ContentContainer>
-						{(selected === 'Pickup') && <div><h3>Book a pickup</h3></div>}
+						{(selected === 'Pickup') && <div><BookPickup /></div>}
             {(selected === 'Orders') && <div><h3>Order history</h3></div>}
             {(selected === 'EditProfile') && <div><h3>Edit Profile</h3></div>}
 					</ContentContainer>

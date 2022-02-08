@@ -16,10 +16,13 @@ const style = {
   p: 4,
 };
 
-const PickupModal = () => {
+const PickupModal = ({ formattedDate }) => {
   const [showModal, setShowModal] = useState(false)
   const handleOpen = () => setShowModal(true)
   const handleClose = () => setShowModal(false)
+ 
+  // const { selectedDate } = props
+  // const date = (props.selectedDate)
 
   return (
     <div>
@@ -32,11 +35,11 @@ const PickupModal = () => {
       >
         <Box sx={style}>
           <Typography id="modal-modal-description" variant="h6" component="h2">
-            Pick up booked at chosen date!
+            Thank you for using our service!
           </Typography>
-          {/* <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            DATE
-          </Typography> */}
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            Confirmed pick up at { formattedDate }.
+          </Typography>
         </Box>
       </Modal>
     </div>
